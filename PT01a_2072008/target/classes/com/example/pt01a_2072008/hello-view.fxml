@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt01a_2072008.HelloController">
+   <right>
+      <HBox prefHeight="131.0" prefWidth="255.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #584CD8;" text="+" textFill="WHITE" onAction="#tambah">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #584CD8;" text="-" textFill="WHITE" onAction="#kurang">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #584CD8;" text="*" textFill="WHITE" onAction="#kali">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #584CD8;" text="/" textFill="WHITE" onAction="#bagi">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </right>
+   <top>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Bilangan 1: ">
+                    <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="bil1">
+                    <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Bilangan 2: ">
+                    <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="bil2">
+                    <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Hasil: " />
+                <TextField fx:id="hasil">
+                    <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+   </top>
+</BorderPane>
