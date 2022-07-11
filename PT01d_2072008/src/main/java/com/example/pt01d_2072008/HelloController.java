@@ -16,7 +16,7 @@ public class HelloController {
     }
     @FXML
     protected void reset(){
-        antri.setText(String.valueOf("1"));
+        antri.setText("1");
         i = 2;
     }
 }
